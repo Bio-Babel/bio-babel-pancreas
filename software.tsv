@@ -6,3 +6,4 @@ monocle2-python	2.9.0	892aa41cd011c0a2a7858885c24d5ea9dabbe09b	trajectory and BE
 DDRTree-python	0.1.6	a4fe15e7dbb4741741c2a7f48e1e0f940c9cfd67	principal graph
 tradeSeq-python	1.13.12	87e8a46fe2b6d19c2d901e3eb81d30ff4c19cb6e	pseudotime expression models
 ggplot2-python	4.0.2.9000.post6	7a1603512126a5b1c2edb3525fc8ce9303660785	visualization
+openpyxl	3.1.5		supplementary workbook export

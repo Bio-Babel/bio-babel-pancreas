@@ -26,6 +26,7 @@
     "public_copy_note": "Only machine-specific paths were redacted from the preprocess and agent notebooks."
   },
   "analysis_code": {
+    "supplementary_tables_builder_sha256": "c34b144f854704698ca55cbd8797e7c1bb14eedd8effda290c2c3d67f4dd972c",
     "common_sha256": "993e3c24668c6e2a7ef19317b483c67bf9f1504a5c3b4f54bf6a7c9ad0ec76b8",
     "screen_sha256": "f4756b1374864d7ca597581c8b75a08e8b2ef94fc566381a81cb420779247690"
   },
