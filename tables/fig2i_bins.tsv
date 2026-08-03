@@ -1,0 +1,13 @@
+lineage	edge_index	pseudotime_edge	definition
+Alpha	0	0.016767177132831133	control-cell quantiles
+Alpha	1	0.8629458704830725	control-cell quantiles
+Alpha	2	7.557706577653486	control-cell quantiles
+Alpha	3	14.922257773926729	control-cell quantiles
+Alpha	4	15.958688011876355	control-cell quantiles
+Alpha	5	16.432204313933422	control-cell quantiles
+Beta	0	0.016767177132831133	control-cell quantiles
+Beta	1	0.8561354830574333	control-cell quantiles
+Beta	2	7.556487434951658	control-cell quantiles
+Beta	3	13.465528586597355	control-cell quantiles
+Beta	4	15.324457102406141	control-cell quantiles
+Beta	5	15.856416530042376	control-cell quantiles

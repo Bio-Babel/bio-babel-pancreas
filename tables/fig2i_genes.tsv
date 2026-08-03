@@ -1,0 +1,13 @@
+gene	group	function	selection_rationale	beam_top100_rank
+Arx	alpha lineage TF	Alpha-cell fate specification and identity maintenance.	Canonical alpha-lineage regulator and BEAM top-100 gene.	29
+Irx1	alpha lineage TF	Embryonic glucagon-positive-cell-enriched transcription factor.	Alpha-identity marker and BEAM top-100 gene.	49
+Irx2	alpha lineage TF	Embryonic glucagon-positive-cell-enriched transcription factor.	Alpha-identity marker and BEAM top-100 gene.	45
+Pou3f4	alpha lineage TF	Alpha-associated transcription factor that promotes Gcg expression.	Alpha-identity marker and BEAM top-100 gene.	82
+Gcg	alpha terminal output	Defining alpha-cell hormone output.	Strongest alpha genotype effect and BEAM top-100 gene.	38
+Ttr	alpha output	Alpha-associated secreted transcript.	Independent alpha-output marker and BEAM top-100 gene.	7
+Pdx1	beta lineage TF	Pancreatic development and beta-cell identity maintenance.	Canonical beta-lineage regulator and BEAM top-100 gene.	21
+Nkx6-1	beta lineage TF	Beta-cell fate establishment and identity maintenance.	Canonical beta-lineage regulator and BEAM top-100 gene.	71
+Mafa	beta lineage TF	Insulin transcription and beta-cell functional maturation.	Canonical beta-maturation regulator and BEAM top-100 gene.	6
+Ins1	beta terminal output	Core beta-cell insulin output.	Strongest beta genotype effect and BEAM top-100 gene.	16
+Ins2	beta terminal output	Core beta-cell insulin output.	Canonical beta-output and BEAM top-100 gene.	22
+Iapp	beta terminal output	Beta-cell amylin secretory output.	Independent beta-output and top genotype-effect gene.	41

@@ -1,0 +1,63 @@
+{
+  "session_type": "single-prompt agent session",
+  "raw_session": {
+    "bytes": 7701861,
+    "lines": 897,
+    "sha256": "14d7b5a13446ca3da477cc4856535d1430e56efd7b9912ae77700e7b54467f9c",
+    "publicly_released": false
+  },
+  "public_transcript": {
+    "file": "session.jsonl",
+    "bytes": 3263172,
+    "messages": 597,
+    "sha256": "497891e22385db0af56dfb6456e5c885dba871c0e776d649f49ea389996b9b81"
+  },
+  "models": {
+    "claude-opus-4-8": 407
+  },
+  "claude_code_versions": {
+    "2.1.211": 597
+  },
+  "started_at": "2026-07-16T00:39:22.755Z",
+  "ended_at": "2026-07-16T02:42:14.524Z",
+  "substantive_user_prompts": 1,
+  "tool_calls": {
+    "Bash": 94,
+    "Edit": 10,
+    "Read": 18,
+    "Skill": 2,
+    "TaskCreate": 8,
+    "TaskUpdate": 11,
+    "ToolSearch": 3,
+    "Write": 18,
+    "mcp__claude_ai_PubMed__get_full_text_article": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_check_code": 3,
+    "mcp__plugin_biobabel_biobabel__biobabel_describe_symbol": 3,
+    "mcp__plugin_biobabel_biobabel__biobabel_describe_template": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_describe_workflow": 3,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_idioms": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_packages": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_symbols": 4,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_templates": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_workflows": 2
+  },
+  "biobabel_mcp_calls": {
+    "mcp__plugin_biobabel_biobabel__biobabel_check_code": 3,
+    "mcp__plugin_biobabel_biobabel__biobabel_describe_symbol": 3,
+    "mcp__plugin_biobabel_biobabel__biobabel_describe_template": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_describe_workflow": 3,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_idioms": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_packages": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_symbols": 4,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_templates": 1,
+    "mcp__plugin_biobabel_biobabel__biobabel_list_workflows": 2
+  },
+  "biobabel_mcp_call_count": 19,
+  "sanitization": {
+    "private_reasoning_blocks_removed": 118,
+    "retrieved_full_article_results_replaced": 1,
+    "internal_session_identifiers_removed": true,
+    "machine_paths_redacted": true,
+    "credential_patterns_redacted": true
+  }
+}

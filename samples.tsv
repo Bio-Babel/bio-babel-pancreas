@@ -1,0 +1,11 @@
+sample	gsm	srr	genotype	biological_replicate	inferred_sex	y_marker_detection_fraction	total_cells	low_mapping_cells	retained_cells	trajectory_cells	included_in_trajectory	exclusion_reason
+Control 1	GSM7912204	SRR26900421	control	Control 1	male	0.8126195028680688	523	0	523	315	True	NA
+Control 2	GSM7912205	SRR26900420	control	Control 2	female	0.0	390	0	390	283	True	NA
+Control 3	GSM7912206	SRR26900419	control	Control 3	female	0.003913894324853229	511	0	511	356	True	NA
+dEndo 1	GSM7912207	SRR26900418	Brg1Δendo;Brm+/-	dEndo 1	female	0.009433962264150943	106	0	106	76	True	NA
+dEndo 2	GSM7912208	SRR26900417	Brg1Δendo;Brm+/-	dEndo 2	male	0.9502762430939227	362	0	362	275	True	NA
+dEndo 3	GSM7912209	SRR26900416	Brg1Δendo;Brm+/-	dEndo 3	female	0.004679144385026738	1496	0	1496	993	True	NA
+dEndo 4	GSM7912210	SRR26900415	Brg1Δendo;Brm+/-	dEndo 4	female	0.0022598870056497176	885	0	885	585	True	NA
+DKO 1	GSM7912211	SRR26900414	DKO	DKO 1	male	0.9348837209302325	215	0	215	151	True	NA
+DKO 2	GSM7912212	SRR26900413	DKO	DKO 2	female	0.014218009478672985	422	422	0	0	False	all cells flagged for low transcriptome mapping
+DKO 3	GSM7912213	SRR26900412	DKO	DKO 3	male	0.7552447552447552	286	0	286	101	True	NA

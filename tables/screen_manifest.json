@@ -1,0 +1,94 @@
+{
+  "completed_at_unix": 1785357721.885581,
+  "input_files": {
+    "${ANALYSIS_WORKDIR}/GSE248369_biobabel_analysis.ipynb": "f1277b59bbba7ee8d842eaadfa00a84e8be3236b964e4eb34e88dc2a3a4d5a3d",
+    "${ANALYSIS_WORKDIR}/data/analysis_input.h5ad": "f95b2aa8467460cfddd7eb6f99381206ca197370fa8a173483f106ce1509a924",
+    "${ANALYSIS_WORKDIR}/work/screen_genotype_tradeseq.py": "88cdf584f41fc6f7332e5b009f06e4ca362898436e9c10487a237862e0050e82",
+    "${ANALYSIS_WORKDIR}/work/traj_ab.h5ad": "23afd6d1844f7a132d520d20bc8db17252931e7b152740062280278fd599d58b"
+  },
+  "multiple_testing": "Benjamini-Hochberg within each lineage x genotype contrast across all finite fitted-gene p-values",
+  "outputs": {
+    "all_genes": "all_genes_lineage_contrasts.tsv.gz",
+    "control_contrasts": "control_contrasts.tsv.gz",
+    "markers": "original_marker_results.tsv.gz",
+    "summary": "screen_summary.tsv.gz",
+    "top50": "top50_integrated_effect_non_technical.tsv.gz"
+  },
+  "packages": {
+    "anndata_version": "0.12.18",
+    "monocle2py_source": "${BIO_BABEL_ROOT}/Monocle2-python/monocle2py/__init__.py",
+    "monocle2py_version": "2.9.0",
+    "numpy_version": "2.5.1",
+    "pandas_version": "2.3.3",
+    "tradeseq_source": "${BIO_BABEL_ROOT}/tradeSeq-python/tradeseq/__init__.py",
+    "tradeseq_version": "1.13.12"
+  },
+  "parameters": {
+    "adjust_sex": true,
+    "chunk_size": 500,
+    "condition_levels": [
+      "control",
+      "dEndo",
+      "DKO"
+    ],
+    "input": "${ANALYSIS_WORKDIR}/work/traj_ab.h5ad",
+    "l2fc_threshold": 0.5,
+    "lineage_assignment": "Single multinomial draw frozen with numpy Generator seed 2024",
+    "lineages": {
+      "1": "alpha",
+      "2": "beta"
+    },
+    "min_cells_expressed": 20,
+    "n_cells": 3135,
+    "n_chunks": 3,
+    "n_genes": 1116,
+    "n_knots": 6,
+    "n_points": 100,
+    "offset": "TMM log offset frozen from all 23,308 raw-count genes",
+    "seed": 2024,
+    "selection_definition": "The original notebook's genotype-blind main tradeSeq panel: BEAM top 1000 (expression/technical filtered), top 400 variable genes under the same filter, plus the predeclared marker panel.",
+    "sex_by_sample": {
+      "Control 1": "male",
+      "Control 2": "female",
+      "Control 3": "female",
+      "DKO 1": "male",
+      "DKO 3": "male",
+      "dEndo 1": "female",
+      "dEndo 2": "male",
+      "dEndo 3": "female",
+      "dEndo 4": "female"
+    },
+    "sex_definition": "Embryo classified male when >=10% of trajectory cells detected at least one of Ddx3y/Eif2s3y/Kdm5d/Uty",
+    "trajectory_assignment": {
+      "alpha_c": 96,
+      "alpha_state": 1,
+      "arm_counts": {
+        "alpha": 997,
+        "beta": 925,
+        "trunk": 1213
+      },
+      "beta_c": 52,
+      "beta_state": 5,
+      "branch_point": 2,
+      "n_alpha": 2210,
+      "n_beta": 2138,
+      "root_state": 4
+    },
+    "universe_mode": "lineage-panel"
+  },
+  "platform": "Linux-3.10.0-1160.144.1.el7.tuxcare.els4.x86_64-x86_64-with-glibc2.17",
+  "primary_effect": "mean absolute fitted log2 fold-change across 100 uniformly spaced pseudotime points (normalized integrated absolute effect)",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "source_repositories": {
+    "monocle2py": {
+      "commit": "892aa41cd011c0a2a7858885c24d5ea9dabbe09b",
+      "dirty": false,
+      "path": "${BIO_BABEL_ROOT}/Monocle2-python"
+    },
+    "tradeseq": {
+      "commit": "87e8a46fe2b6d19c2d901e3eb81d30ff4c19cb6e",
+      "dirty": false,
+      "path": "${BIO_BABEL_ROOT}/tradeSeq-python"
+    }
+  }
+}

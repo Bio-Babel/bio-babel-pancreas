@@ -1,0 +1,53 @@
+{
+  "adjust_sex": true,
+  "chunk_size": 500,
+  "condition_levels": [
+    "control",
+    "dEndo",
+    "DKO"
+  ],
+  "input": "${ANALYSIS_WORKDIR}/work/traj_ab.h5ad",
+  "l2fc_threshold": 0.5,
+  "lineage_assignment": "Single multinomial draw frozen with numpy Generator seed 2024",
+  "lineages": {
+    "1": "alpha",
+    "2": "beta"
+  },
+  "min_cells_expressed": 20,
+  "n_cells": 3135,
+  "n_chunks": 3,
+  "n_genes": 1116,
+  "n_knots": 6,
+  "n_points": 100,
+  "offset": "TMM log offset frozen from all 23,308 raw-count genes",
+  "seed": 2024,
+  "selection_definition": "The original notebook's genotype-blind main tradeSeq panel: BEAM top 1000 (expression/technical filtered), top 400 variable genes under the same filter, plus the predeclared marker panel.",
+  "sex_by_sample": {
+    "Control 1": "male",
+    "Control 2": "female",
+    "Control 3": "female",
+    "DKO 1": "male",
+    "DKO 3": "male",
+    "dEndo 1": "female",
+    "dEndo 2": "male",
+    "dEndo 3": "female",
+    "dEndo 4": "female"
+  },
+  "sex_definition": "Embryo classified male when >=10% of trajectory cells detected at least one of Ddx3y/Eif2s3y/Kdm5d/Uty",
+  "trajectory_assignment": {
+    "alpha_c": 96,
+    "alpha_state": 1,
+    "arm_counts": {
+      "alpha": 997,
+      "beta": 925,
+      "trunk": 1213
+    },
+    "beta_c": 52,
+    "beta_state": 5,
+    "branch_point": 2,
+    "n_alpha": 2210,
+    "n_beta": 2138,
+    "root_state": 4
+  },
+  "universe_mode": "lineage-panel"
+}

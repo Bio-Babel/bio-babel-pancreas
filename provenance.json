@@ -1,0 +1,38 @@
+{
+  "dataset": "GSE248369",
+  "primary_publication": {
+    "doi": "10.1007/s00125-024-06211-7",
+    "pmid": "38958700",
+    "pmcid": "PMC11912225"
+  },
+  "analysis_input": {
+    "description": "Manually QC-reviewed and annotated AnnData retaining raw UMI counts",
+    "file_in_git": false,
+    "bytes": 124631406,
+    "sha256": "f95b2aa8467460cfddd7eb6f99381206ca197370fa8a173483f106ce1509a924"
+  },
+  "trajectory_checkpoint": {
+    "description": "Agent-generated alpha/beta DDRTree checkpoint",
+    "file_in_git": false,
+    "bytes": 407579433,
+    "sha256": "23afd6d1844f7a132d520d20bc8db17252931e7b152740062280278fd599d58b"
+  },
+  "notebooks": {
+    "preprocess_source_sha256": "53002b26458cd32de59d5c2be0a5328915e21f5231d77dd8c1d09ca6a66092b8",
+    "preprocess_public_sha256": "ee0f34c603124db9144b7212cdcf5e83711d79e5e584c5cd81e574208564ff9b",
+    "agent_source_sha256": "f1277b59bbba7ee8d842eaadfa00a84e8be3236b964e4eb34e88dc2a3a4d5a3d",
+    "agent_public_sha256": "1b59b363069c61f658e3f621e4fdde636d7af7a87bd9de6ebbe23803f3b2ec1a",
+    "followup_public_sha256": "7dfa3e0a83dad111c3f09e557caca679599a56aa1e3b61337c87897370d0b4f5",
+    "public_copy_note": "Only machine-specific paths were redacted from the preprocess and agent notebooks."
+  },
+  "analysis_code": {
+    "common_sha256": "993e3c24668c6e2a7ef19317b483c67bf9f1504a5c3b4f54bf6a7c9ad0ec76b8",
+    "screen_sha256": "f4756b1374864d7ca597581c8b75a08e8b2ef94fc566381a81cb420779247690"
+  },
+  "seeds": {
+    "analysis": 2024,
+    "ddrtree": 2016
+  },
+  "replication_note": "Embryos are the biological replicates; cell-level tradeSeq tests are treated as candidate-screening statistics.",
+  "harmony_note": "Harmony was used only to support manual annotation and was never used as Monocle2 trajectory input."
+}

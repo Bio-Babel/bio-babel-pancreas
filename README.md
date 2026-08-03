@@ -1,0 +1,46 @@
+# Bio-Babel pancreas case study
+
+This is the compact reproducibility package for the GSE248369 case study. The
+workflow was:
+
+1. manual preprocessing, quality control and cell annotation;
+2. one biological-analysis prompt to Claude Code;
+3. package discovery and API guidance through 19 read-only Bio-Babel MCP calls;
+4. agent-written, executed and debugged downstream analysis; and
+5. human review, completion of the genotype screen and biological interpretation.
+
+Bio-Babel MCP supplied operating knowledge for Monocle2-python,
+DDRTree-python, tradeSeq-python and ggplot2-python. It did not execute the
+analysis itself.
+
+## Files
+
+- `preprocess.ipynb`: manual preprocessing and annotation before the agent run.
+- `agent.ipynb`: notebook generated and executed by Claude from the single prompt.
+- `followup.ipynb`: human-reviewed follow-up that starts from frozen agent outputs;
+  it does not repeat preprocessing, DDRTree reconstruction, BEAM testing or
+  tradeSeq fitting.
+- `prompt.md`, `session.jsonl`, `session_meta.json`, `report.md`: prompt,
+  sanitized observable conversation, run metadata and Claude's preliminary
+  report. The report is retained as an agent artifact, not as the final
+  biological interpretation.
+- `tables/`: full statistical results needed to audit BEAM, tradeSeq, the
+  1,116-gene genotype screen and the retained manuscript panels.
+- `code/`: the two scripts needed to complete the 1,116-gene screen.
+- `samples.tsv`, `cells.tsv.gz`, `provenance.json`, `software.tsv`: sample and
+  annotation metadata, input checksums, seeds and software commits.
+
+`followup.ipynb` is distributed without cell outputs. To run it, place the
+deposited trajectory checkpoint at `data/traj_ab.h5ad` or set
+`BIOBABEL_TRAJECTORY_INPUT` to its location.
+
+The raw Claude JSONL, biological matrices, H5AD checkpoints, environments,
+logs, temporary figures and superseded outputs are not included. Machine paths
+in the public notebook/transcript copies are redacted. The exact processed
+AnnData and trajectory checkpoint are identified by SHA-256 in
+`provenance.json`; they should be deposited separately rather than committed to
+Git.
+
+Embryos are the biological replicates. Cell-level genotype-aware tradeSeq tests
+are candidate-screening statistics, not embryo-replicated inference. Harmony
+was used only during manual annotation and not as DDRTree input.
